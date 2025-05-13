@@ -7,12 +7,8 @@ const images = [
   { url: "https://picsum.photos/id/238/200/300" },
   { url: "https://picsum.photos/id/239/200/300" },
 ];
-
-document.addEventListener("DOMContentLoaded",async function(){
-//     <div id="output"></div>
-//   <div id="error"></div>
-//   <div id="loading"></div>
-  var loading = document.getElementById("loading");
+async function downloadImages () {
+	var loading = document.getElementById("loading");
   var error = document.getElementById("error");
   var output = document.getElementById("output");
   
@@ -33,4 +29,11 @@ document.addEventListener("DOMContentLoaded",async function(){
         loading.innerText=""
         error.innerText="Error downloading images"
     }
+}
+
+document.addEventListener("DOMContentLoaded",async function(){
+//     <div id="output"></div>
+//   <div id="error"></div>
+//   <div id="loading"></div>
+  
 })
