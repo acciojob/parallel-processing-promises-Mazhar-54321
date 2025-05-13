@@ -17,7 +17,7 @@ async function downloadImages () {
     if(array){
      loading.innerText="";
      console.log(array,"arrau")
-     let imagesSrcArray= [array[0]["url"],array[1]["url"],array[2]["url"]];
+     let imagesSrcArray= [images[0]["url"],images[1]["url"],images[2]["url"]];
      imagesSrcArray.forEach((el)=>{
          const img = document.createElement("img");
          img.src=el;
